@@ -3,6 +3,10 @@ package com.exercise12oppshape.model;
 public class Triangle extends Shape{
 	private double base;
 	private double height;
+	private double hypotenuse;
+	public double area;
+	private double perimeter; //only class
+	protected String name; //Class and subclass
 	
 	public Triangle(){
 		
@@ -16,8 +20,12 @@ public class Triangle extends Shape{
 	public double CalculateArea(double base, double height) {
 		return (base*height)/2;
 	}
-	public double CalculatePerimeter(double base, double heigth, double hypotenuse) {
-		return base+height+hypotenuse;
+	public double CalculatePerimeter() {
+		this.perimeter = this.base + this.height + this.hypotenuse;
+		return 0;
+	}
+	public double CalculatePerimeter(double base, double height, double hypotenuse) {
+		return base + height + hypotenuse;
 	}
 	
 	//Getters and Setters
@@ -34,5 +42,11 @@ public class Triangle extends Shape{
 	}
 	public double getHeight() {
 		return this.height;
+	}
+
+	@Override
+	public void DoSomething() {
+		// TODO Auto-generated method stub
+		
 	}
 }

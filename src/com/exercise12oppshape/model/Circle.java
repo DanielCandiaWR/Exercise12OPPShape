@@ -25,4 +25,9 @@ public class Circle extends Shape{
 	public double getRadio() {
 		return radio;
 	}
+	@Override
+	public void DoSomething() {
+		// TODO Auto-generated method stub
+		
+	}
 }

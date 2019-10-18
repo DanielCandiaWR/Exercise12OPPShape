@@ -22,4 +22,9 @@ public class Square extends Shape{
 	public double getSide() {
 		return side;
 	}
+	@Override
+	public void DoSomething() {
+		// TODO Auto-generated method stub
+		
+	}
 }

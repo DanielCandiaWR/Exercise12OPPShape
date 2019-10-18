@@ -1,5 +1,8 @@
 package com.exercise12oppshape.app;
-import com.exercise12oppshape.model.*;
+import com.exercise12oppshape.model.Triangle;
+import com.exercise12oppshape.model.Circle;
+import com.exercise12oppshape.model.Square;
+import com.exercise12oppshape.model.IsoscelesTriangle;
 import java.util.*;
 public class ShapeApp {
 	public static void main(String[] args) {
@@ -10,6 +13,7 @@ public class ShapeApp {
 		Square square2 = new Square(10.2);
 		Circle circle2 = new Circle(5.3);
 		Triangle triangle2 = new Triangle(5.4, 6.8);
+		IsoscelesTriangle triangle3 = new IsoscelesTriangle();
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Input the radio of the circle: ");		
